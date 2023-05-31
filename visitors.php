@@ -268,7 +268,7 @@ Object.entries(timeData).forEach(entry => {
             id: 'mapbox/streets-v11',
             tileSize: 512,
             zoomOffset: -1,
-            accessToken: 'pk.eyJ1IjoicGF0dHJpY2tvZmYiLCJhIjoiY2xoM2RldjFrMW1vZzNkb2d2c2JuMHVpdSJ9.W-HEIcwUshp0wVHwUL1tDA'
+            accessToken: '...'
         }).addTo(map);
         locations.forEach(loc => {
             L.marker([loc.lat, loc.lng]).addTo(map);

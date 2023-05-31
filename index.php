@@ -123,7 +123,7 @@
                 $.ajax({
                     url: 'https://api.mapbox.com/geocoding/v5/mapbox.places/'+locationInput.value+'.json?' +
                         'limit=1&' +
-                        'access_token=pk.eyJ1IjoicGF0dHJpY2tvZmYiLCJhIjoiY2xoM2RldjFrMW1vZzNkb2d2c2JuMHVpdSJ9.W-HEIcwUshp0wVHwUL1tDA',
+                        'access_token=...',
                         success: function(response) {
         console.log(response);
     }
@@ -155,7 +155,7 @@
                         }).done(function ( capitalData ) {
                             $.ajax({
                                 url: 'https://api.weatherapi.com/v1/forecast.json?' +
-                                    'key=8579085bed204578b99122602233004' +
+                                    'key=...' +
                                     '&q='+data.features[0].center[1]+","+data.features[0].center[0]+'&' +
                                     '&days=1&aqi=yes&alerts=yes',
                             }).done(function ( weatherData ) {
